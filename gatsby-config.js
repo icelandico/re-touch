@@ -3,6 +3,9 @@ module.exports = {
     siteUrl: "https://www.yourdomain.tld",
     title: "Re-Touch",
   },
+  flags: {
+    DEV_SSR: false,
+  },
   plugins: [
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
