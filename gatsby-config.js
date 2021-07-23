@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
     title: "Re-Touch",
+    pathPrefix: "/re-touch",
   },
   flags: {
     DEV_SSR: false,

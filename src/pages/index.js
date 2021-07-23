@@ -2,6 +2,8 @@ import React from "react";
 import BeforeAfterSlider from 'react-before-after-slider'
 import "./index.css";
 
+const isBrowser = typeof window !== "undefined"
+
 const IndexPage = () => {
   return (
     <main ref={document}>
