@@ -1,7 +1,7 @@
 module.exports = {
+  pathPrefix: "/re-touch",
   siteMetadata: {
     title: "Re-Touch",
-    pathPrefix: "/re-touch",
   },
   flags: {
     DEV_SSR: false,
