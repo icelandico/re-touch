@@ -1,16 +1,27 @@
+.main__container {
+  margin-top: 30px;
+}
+
 .retouch__images-container {
   width: 80%;
   margin: 0 auto;
-}
-
-.retouch-image {
-  margin-bottom: 30px;
-  display: flex;
-  justify-content: center;
 }
 
 [class^="styles_after"],
 [class^="styles_before"]
 {
   background-size: contain!important;
+}
+
+.retouch-container__double {
+  display: flex;
+}
+
+.retouch-image__text {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.retouch-image__text--bottom {
+  margin-bottom: 16px;
 }

@@ -4,47 +4,48 @@ import "./index.css";
 
 const IndexPage = () => {
   return (
-    <main>
-      <h1>
-        Hello, Jestem Isia.
-      </h1>
+    <main className={'main__container'}>
       { typeof window !== 'undefined' && (
           <div className={'retouch__images-container'}>
             <div className={'retouch-image'}>
+              <p className={'retouch-image__text'}>fotografie i retusz:</p>
+              <p className={'retouch-image__text'}>Marianna Matuszewska</p>
               <BeforeAfterSlider
-                  before={"https://imagizer.imageshack.com/img923/9210/Igj6BB.jpg"}
-                  after={"https://imagizer.imageshack.com/img922/7249/NCCfen.jpg"}
-                  width={500}
-                  height={700}
+                  after="https://imagizer.imageshack.com/img924/2770/tXP34r.jpg"
+                  before="https://imagizer.imageshack.com/img922/7269/mpQMZt.jpg"
+                  width={1000}
+                  height={750}
               />
             </div>
-
-            <div className={'retouch-image'}>
-              <BeforeAfterSlider
-                  before="https://imagizer.imageshack.com/img922/4202/IfNACi.jpg"
-                  after="https://imagizer.imageshack.com/img923/2862/77pNNK.jpg"
-                  width={500}
-                  height={800}
-              />
+            <div className={'retouch-container__double'}>
+              <div className={'retouch-image'}>
+                <BeforeAfterSlider
+                    after={"https://imagizer.imageshack.com/img922/4515/3fPtmA.jpg"}
+                    before={"https://imagizer.imageshack.com/img924/2238/Q4gvxk.jpg"}
+                    width={500}
+                    height={800}
+                />
+              </div>
+              <div className={'retouch-image'}>
+                <BeforeAfterSlider
+                    after="https://imagizer.imageshack.com/img922/1676/GT4AMu.jpg"
+                    before="https://imagizer.imageshack.com/img923/8881/solkKH.jpg"
+                    width={500}
+                    height={800}
+                />
+              </div>
             </div>
-
             <div className={'retouch-image'}>
+              <p className={'retouch-image__text'}>fotograf: Filip Jesiołowski</p>
+              <p className={'retouch-image__text retouch-image__text--bottom'}>retusz: Marianna Matuszewska</p>
               <BeforeAfterSlider
-                  before="https://imagizer.imageshack.com/img924/5241/E1mJMd.jpg"
-                  after="https://imagizer.imageshack.com/img922/9710/IJSLR0.jpg"
+                  after={"https://imagizer.imageshack.com/img923/1397/X81Etw.jpg"}
+                  before={"https://imagizer.imageshack.com/img923/761/Gi65Cd.jpg"}
                   width={600}
-                  height={800}
+                  height={900}
               />
             </div>
 
-            <div className={'retouch-image'}>
-              <BeforeAfterSlider
-                  before="https://imagizer.imageshack.com/img922/7268/UXWK4u.jpg"
-                  after="https://imagizer.imageshack.com/img922/3314/zlD0qS.jpg"
-                  width={800}
-                  height={500}
-              />
-            </div>
           </div>
       )}
 
